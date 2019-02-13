@@ -1,0 +1,38 @@
+uuid: b08b3697-8512-4ea3-ae00-e998542aacb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tour.field_text
+    - field.field.paragraph.tour.field_tour_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.tour
+  module:
+    - image
+    - text
+id: paragraph.tour.default
+targetEntityType: paragraph
+bundle: tour
+mode: default
+content:
+  field_text:
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_tour_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

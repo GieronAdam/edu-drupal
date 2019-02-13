@@ -1,0 +1,9 @@
+uuid: 40939940-db86-49c0-b0cb-ff36106622f9
+langcode: en
+status: true
+dependencies: {  }
+id: tour
+label: Tour
+icon_uuid: null
+description: 'New Tour Paragraph'
+behavior_plugins: {  }
