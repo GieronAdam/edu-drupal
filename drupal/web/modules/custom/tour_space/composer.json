@@ -1,0 +1,14 @@
+{
+  "name": "drupal/tour_space",
+  "type": "drupal-module",
+  "description": "Provide user private and public space",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/tour_space",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/tour_space",
+    "source": "http://cgit.drupalcode.org/tour_space"
+  },
+  "require": { }
+}

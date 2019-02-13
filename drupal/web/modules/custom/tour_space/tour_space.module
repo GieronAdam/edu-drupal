@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains tour_space.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function tour_space_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the tour_space module.
+    case 'help.page.tour_space':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provide user private and public space') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function tour_space_theme() {
+  return [
+    'tour_space' => [
+      'render element' => 'children',
+    ],
+  ];
+}

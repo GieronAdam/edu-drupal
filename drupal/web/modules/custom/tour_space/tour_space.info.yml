@@ -1,0 +1,5 @@
+name: 'tour space'
+type: module
+description: 'Provide user private and public space'
+core: 8.x
+package: 'Custom'

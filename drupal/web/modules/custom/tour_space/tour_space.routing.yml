@@ -1,0 +1,22 @@
+
+tour_space.user_private_space_controller_public:
+  path: '/tour_space/public/{name}'
+  defaults:
+    _controller: '\Drupal\tour_space\Controller\UserPrivateSpaceController::publicSpace'
+    _title: 'publicSpace'
+  requirements:
+    _permission: 'access content'
+tour_space.user_private_space_controller_private:
+  path: '/tour_space/private'
+  defaults:
+    _controller: '\Drupal\tour_space\Controller\UserPrivateSpaceController::privateSpace'
+    _title: 'privateSpace'
+  requirements:
+    _permission: 'access content'
+tour_space.user_private_space_controller_shared:
+  path: '/tour_space/shared'
+  defaults:
+    _controller: '\Drupal\tour_space\Controller\UserPrivateSpaceController::sharedSpace'
+    _title: 'privateSpace'
+  requirements:
+    _permission: 'access content'
