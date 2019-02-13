@@ -3,18 +3,23 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.tour.field_images
     - field.field.paragraph.tour.field_text
-    - field.field.paragraph.tour.field_tour_image
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.tour
   module:
-    - image
+    - media_library
     - text
 id: paragraph.tour.default
 targetEntityType: paragraph
 bundle: tour
 mode: default
 content:
+  field_images:
+    type: media_library_widget
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_text:
     weight: 1
     settings:
@@ -23,14 +28,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea_with_summary
-    region: content
-  field_tour_image:
-    weight: 0
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
     region: content
 hidden:
   created: true
