@@ -213,7 +213,7 @@ postgresql_users:
 installed_extras:
   - adminer
   # - blackfire
-  # - drupalconsole
+  - drupalconsole
   - drush
   # - elasticsearch
   # - java
@@ -224,12 +224,12 @@ installed_extras:
   - pimpmylog
   # - redis
   # - ruby
-  # - selenium
+  - selenium
   # - solr
   # - tideways
   # - upload-progress
   - varnish
-  # - xdebug
+  - xdebug
   # - xhprof # use `tideways` if you're installing PHP 7+
 
 # Add any extra apt or yum packages you would like installed.
