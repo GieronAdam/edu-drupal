@@ -1,0 +1,28 @@
+uuid: 42f0a75c-f2fe-4c2c-a051-cb157252d276
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shared_for
+    - node.type.tour
+id: node.tour.field_shared_for
+field_name: field_shared_for
+entity_type: node
+bundle: tour
+label: 'Shared for'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

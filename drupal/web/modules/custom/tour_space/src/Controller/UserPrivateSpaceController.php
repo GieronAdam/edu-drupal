@@ -12,10 +12,10 @@ class UserPrivateSpaceController extends ControllerBase
 {
 
     /**
-     * Hello.
+     * publicSpace.
      *
-     * @return string
-     *   Return Hello string.
+     * @return view
+     *   Return public view.
      */
     public function publicSpace()
     {
@@ -26,7 +26,12 @@ class UserPrivateSpaceController extends ControllerBase
         ];
     }
 
-
+    /**
+     * privateSpace.
+     *
+     * @return view
+     *   Return private view.
+     */
     public function privateSpace($name)
     {
         $rendered = \Drupal::service('renderer')->render(views_embed_view('public_tour_space', 'page_2'));
@@ -36,6 +41,12 @@ class UserPrivateSpaceController extends ControllerBase
         ];
     }
 
+    /**
+     * sharedSpace.
+     *
+     * @return view
+     *   Return shared view.
+     */
     public function sharedSpace($name)
     {
         $rendered = \Drupal::service('renderer')->render(views_embed_view('public_tour_space', 'page_3'));
