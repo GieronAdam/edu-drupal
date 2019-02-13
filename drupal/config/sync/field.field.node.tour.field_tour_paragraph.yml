@@ -1,0 +1,34 @@
+uuid: d0fa3da9-32f8-41fe-8815-ebc91cda089f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tour_paragraph
+    - node.type.tour
+    - paragraphs.paragraphs_type.tour
+  module:
+    - entity_reference_revisions
+id: node.tour.field_tour_paragraph
+field_name: field_tour_paragraph
+entity_type: node
+bundle: tour
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tour: tour
+    target_bundles_drag_drop:
+      text:
+        weight: 3
+        enabled: false
+      tour:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

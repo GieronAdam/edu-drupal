@@ -1,0 +1,23 @@
+uuid: 3d0c81b1-dbaa-4d73-91ec-431a67850df8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_public
+    - node.type.tour
+id: node.tour.field_is_public
+field_name: field_is_public
+entity_type: node
+bundle: tour
+label: is_public
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

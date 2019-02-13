@@ -1,0 +1,50 @@
+uuid: af50e04b-e9f9-47b9-b1f4-be5e09f518cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tour.body
+    - field.field.node.tour.field_is_public
+    - field.field.node.tour.field_tour_paragraph
+    - node.type.tour
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.tour.default
+targetEntityType: node
+bundle: tour
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_is_public:
+    weight: 103
+    label: hidden
+    settings:
+      format: unicode-yes-no
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_tour_paragraph:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
