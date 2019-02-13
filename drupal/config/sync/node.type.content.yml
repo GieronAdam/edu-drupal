@@ -1,0 +1,19 @@
+uuid: 32aacd97-2b43-41fd-b63b-7382ae3ed72f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+name: Content
+type: content
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
